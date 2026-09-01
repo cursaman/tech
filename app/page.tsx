@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 
 const codes = [
   { code: "M2-1317", title: "정착기 내부 용지 걸림", category: "용지 걸림", level: "자가 조치", summary: "정착기에 걸린 용지를 제거한 뒤 Wrap Jam을 초기화합니다." },
@@ -68,7 +69,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="guidesSection" id="guides"><div className="sectionHead"><div><span className="sectionNo">03</span><h2>현장 해결 가이드</h2></div><p>이미지를 눌러 크게 확인하세요</p></div><div className="guideGrid"><article><div className="guideLabel">화질 문제 · 3단계</div><h3>ADF 복사 시 가로 줄이 생길 때</h3><p>ADF 미러 오염 여부를 확인하고 젖은 티슈와 마른 수건으로 안전하게 청소합니다.</p><a href="/assets/adf-line-guide.png" target="_blank"><img src="/assets/adf-line-guide.png" alt="ADF 줄 발생 시 미러 청소 방법 전체 안내"/></a></article><article id="m2-guide"><div className="guideLabel navy">에러 해결 · 6단계</div><h3>M2-1317 정착기 용지 걸림</h3><p>걸린 용지를 제거하고 테크 모드의 Wrap Jam Clear로 오류를 초기화합니다.</p><a href="/assets/m2-1317-guide.png" target="_blank"><img src="/assets/m2-1317-guide.png" alt="M2-1317 오류 해결 6단계 안내"/></a></article></div></section>
+    <section className="guidesSection" id="guides"><div className="sectionHead"><div><span className="sectionNo">03</span><h2>현장 해결 가이드</h2></div><p>이미지를 눌러 크게 확인하세요</p></div><div className="guideGrid"><article><div className="guideLabel">화질 문제 · 3단계</div><h3>ADF 복사 시 가로 줄이 생길 때</h3><p>ADF 미러 오염 여부를 확인하고 젖은 티슈와 마른 수건으로 안전하게 청소합니다.</p><a href="/assets/adf-line-guide.png" target="_blank"><Image src="/assets/adf-line-guide.png" width={1536} height={1018} alt="ADF 줄 발생 시 미러 청소 방법 전체 안내"/></a></article><article id="m2-guide"><div className="guideLabel navy">에러 해결 · 6단계</div><h3>M2-1317 정착기 용지 걸림</h3><p>걸린 용지를 제거하고 테크 모드의 Wrap Jam Clear로 오류를 초기화합니다.</p><a href="/assets/m2-1317-guide.png" target="_blank"><Image src="/assets/m2-1317-guide.png" width={1400} height={2304} alt="M2-1317 오류 해결 6단계 안내"/></a></article></div></section>
 
     <section className="manuals" id="manuals"><div><span className="sectionNo light">04</span><h2>기술자료 다운로드</h2><p>현장에서 빠르게 확인할 수 있도록 원본 PDF 자료를 제공합니다.</p></div><div className="downloadGrid"><a href="/assets/mx-error-codes.pdf" target="_blank"><span>PDF</span><div><strong>MX 시리즈 에러코드</strong><small>SL-X3220 / SL-X4220 오류 진단표</small></div><i>↓</i></a><a href="/assets/mxpro-error-codes.pdf" target="_blank"><span>PDF</span><div><strong>MXPRO 오류코드</strong><small>오류 체계와 분류별 확인 자료</small></div><i>↓</i></a></div></section>
     <footer><div className="brand inverse"><span className="brandmark">T</span><span>TECH<span>CARE</span></span></div><p>복합기 기술지원 포털 · 현장 조치 전 안전수칙을 먼저 확인하세요.</p><a href="#top">맨 위로 ↑</a></footer>
